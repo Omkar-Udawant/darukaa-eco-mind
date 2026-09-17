@@ -1,0 +1,23 @@
+fastapi>=0.110.0
+uvicorn[standard]>=0.29.0
+sqlalchemy>=2.0.30
+pydantic>=2.7.0
+pydantic-settings>=2.3.0
+python-multipart>=0.0.9
+python-dotenv>=1.0.1
+numpy>=1.26.0
+pandas>=2.2.0
+# --- AI / RAG (optional at runtime, required for full mode) ---
+langchain>=0.2.5
+langchain-core>=0.2.5
+langchain-community>=0.2.5
+langchain-openai>=0.1.8
+langgraph>=0.1.5
+openai>=1.35.0
+tiktoken>=0.7.0
+chromadb>=0.5.3
+qdrant-client>=1.9.0
+redis>=5.0.3
+# --- test ---
+pytest>=8.2.0
+httpx>=0.27.0

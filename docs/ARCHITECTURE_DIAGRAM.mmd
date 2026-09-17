@@ -1,0 +1,7 @@
+flowchart LR
+  UI[Next.js 15\nDashboard/Chat/Metrics] --> API[FastAPI\n/chat /analyze /recommend]
+  API --> G[LangGraph:\ninput→retrieval→scientist→biodiversity→impact→verify→respond]
+  G --> V[(Qdrant/Chroma/Local\nFAO·IPCC·UNEP·IUCN·GBIF·NASA)]
+  G --> DB[(Supabase Postgres\n13 tables)]
+  G --> R[(Redis\nconversation memory)]
+  G --> OUT([10-section response\n+ graph + confidence + sources])
